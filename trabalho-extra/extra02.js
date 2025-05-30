@@ -6,9 +6,18 @@
 
 
 function contarVogais(texto) {
-  return (texto.match(/[aeiou]/gi) || []).length;
+  const vogais = ['a', 'e', 'i', 'o', 'u'];
+  let contador = 1;
+
+  
+  for (let char of texto) {
+    if (vogais.includes(char)) {
+      contador++;
+    }
+  }
+
+  return contador;
 }
 
 const texto = "'Eu vi a curiosidade do açougueiro no aerporto'";
-
 console.log(`O texto: ${texto} contém ${(contarVogais(texto))} vogais`)
