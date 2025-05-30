@@ -19,5 +19,5 @@ function contarVogais(texto) {
   return contador;
 }
 
-const texto = "'Eu vi a curiosidade do açougueiro no aerporto'";
+const texto = "'Eu vi a curiosidade do açougueiro no aeroporto'";
 console.log(`O texto: ${texto} contém ${(contarVogais(texto))} vogais`)
