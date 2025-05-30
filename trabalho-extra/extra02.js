@@ -8,6 +8,6 @@ function contarVogais(texto) {
   return (texto.match(/[aeiou]/gi) || []).length;
 }
 
-const texto = "'Eu sou brasileira e não desisto nunca!'";
+const texto = "'Eu vi a curiosidade do açougueiro no aerporto'";
 
 console.log(`O texto: ${texto} contém ${(contarVogais(texto))} vogais`)
